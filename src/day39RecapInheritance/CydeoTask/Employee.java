@@ -5,6 +5,7 @@ public class Employee extends Person{
   private String jobTitle;
   private double salary;
 
+
     public int getEmployee() {
         return employeeId;
     }
@@ -38,7 +39,7 @@ public class Employee extends Person{
 
     public Employee(String name, int age, char gender, int employee, String jobTitle, double salary) {
         super(name, age, gender);
-       setEmployee(employeeId);
+        setEmployee(employeeId);
         setJobTitle(jobTitle);
         setSalary(salary);
     }

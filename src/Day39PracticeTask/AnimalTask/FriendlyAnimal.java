@@ -3,14 +3,13 @@ package Day39PracticeTask.AnimalTask;
 public class FriendlyAnimal extends Animal39 {
     private boolean isWild;
     private boolean isFriendly;
-
     private boolean isPlayable;
 
     public FriendlyAnimal(String name, String breed, char gender, int age, char size, String color, boolean isWild, boolean isFriendly, boolean isPlayable) {
         super(name, breed, gender, age, size, color);
-        setFriendly(isFriendly);
-        setWild(isWild);
-     setPlayable(isPlayable);
+         setFriendly(isFriendly);
+         setWild(isWild);
+         setPlayable(isPlayable);
     }
 
     public boolean isWild() {

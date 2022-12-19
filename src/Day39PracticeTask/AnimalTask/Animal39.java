@@ -15,9 +15,9 @@ public class Animal39 {
         setName(name);
         setBreed(breed);
         setGender(gender);
-       setAge(age);
+        setAge(age);
         setSize(size);
-       setColor(color);
+        setColor(color);
     }
 
     public String getName() {
@@ -25,9 +25,10 @@ public class Animal39 {
     }
 
     public void setName(String name) {
-        if (name==null||name.isEmpty()||name.isBlank())
+        if (name==null||name.isEmpty()||name.isBlank()) {
             System.err.println("Invalid name");
-        System.exit(1);
+            System.exit(1);
+        }
         this.name = name;
     }
 
@@ -36,9 +37,10 @@ public class Animal39 {
     }
 
     public void setBreed(String breed) {
-        if (breed==null||breed.isEmpty()||breed.isBlank())
+        if (breed==null||breed.isEmpty()||breed.isBlank()) {
             System.err.println("Invalid breed");
-        System.exit(1);
+            System.exit(1);
+        }
         this.breed = breed;
     }
 
@@ -47,8 +49,9 @@ public class Animal39 {
     }
 
     public void setGender(char gender) {
-        if (gender!='F'||gender!='M')
+        if (!(gender=='F'||gender=='M')) {
             System.err.println("Invalid Gender");
+        }
         this.gender = gender;
     }
 
@@ -57,8 +60,9 @@ public class Animal39 {
     }
 
     public void setAge(int age) {
-        if (age>0)
+        if (age<0) {
             System.err.println("Invalid Age");
+        }
         this.age = age;
     }
 
@@ -75,34 +79,27 @@ public class Animal39 {
     }
 
     public void setColor(String color) {
-         if (color==null||color.isEmpty()||color.isBlank())
-            System.err.println("Invalid color");
-        System.exit(1);
-
+         if (color==null||color.isEmpty()||color.isBlank()) {
+             System.err.println("Invalid color");
+                System.exit(1);
+    }
         this.color = color;
     }
 
     public void eat(){
 
-        System.out.println("is eating");
+        System.out.println(name+"is eating");
     }
 
     public void drink(){
 
-        System.out.println("is drinking");
+        System.out.println(name+"is drinking");
 
 
 }
 public void sleep(){
 
-        System.out.println("is sleeping");
-
-
-}
-
-public void move(){
-
-        System.out.println("is moving");
+        System.out.println(name+"is sleeping");
 
 
 }

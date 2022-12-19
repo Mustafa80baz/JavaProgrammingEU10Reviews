@@ -14,10 +14,10 @@ Task 1: Given a string, print the string made of its first two chars, so the Str
                                       //0123
         String word = scanner.next(); //Hello
         String result=""+word.charAt(0)+word.charAt(1);
-        String result2=word.charAt(0)+""+word.charAt(1);
+       // String result2=word.charAt(0)+""+word.charAt(1);
 
         System.out.println(result.toUpperCase());
-        System.out.println(result2.toUpperCase());
+       // System.out.println(result2.toUpperCase());
 
 
     }
